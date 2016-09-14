@@ -1,14 +1,14 @@
 package JSON::Schema::Shorthand;
 # ABSTRACT: Alternative, condensed format for JSON Schemas
 
+use strict;
+use warnings;
+
 use experimental 'postderef';
 
 use parent 'Exporter::Tiny';
 
 our @EXPORT = ( 'js_shorthand' );
-
-use strict;
-use warnings;
 
 use Clone qw/ clone /;
 
