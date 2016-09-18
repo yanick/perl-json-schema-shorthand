@@ -4,6 +4,7 @@ Revision history for JSON-Schema-Shorthand
   [ API CHANGES ]
 
   [ BUG FIXES ]
+  - Needs Perl >= 5.20.0 (GH#1)
 
   [ DOCUMENTATION ]
 

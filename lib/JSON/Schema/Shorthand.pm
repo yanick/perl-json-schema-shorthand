@@ -4,6 +4,8 @@ package JSON::Schema::Shorthand;
 use strict;
 use warnings;
 
+use 5.20.0;
+
 use experimental 'postderef';
 
 use parent 'Exporter::Tiny';
