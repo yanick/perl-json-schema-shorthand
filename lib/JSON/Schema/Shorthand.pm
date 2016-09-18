@@ -1,6 +1,7 @@
 package JSON::Schema::Shorthand;
+our $AUTHORITY = 'cpan:YANICK';
 # ABSTRACT: Alternative, condensed format for JSON Schemas
-
+$JSON::Schema::Shorthand::VERSION = '0.0.2';
 use strict;
 use warnings;
 
@@ -70,7 +71,20 @@ sub js_shorthand {
 }
 
 1;
+
 __END__
+
+=pod
+
+=encoding UTF-8
+
+=head1 NAME
+
+JSON::Schema::Shorthand - Alternative, condensed format for JSON Schemas
+
+=head1 VERSION
+
+version 0.0.2
 
 =head1 SYNOPSIS
 
@@ -89,7 +103,6 @@ __END__
     #  }
     #  required => [ 'bar' ],
     # }
-    
 
 =head1 DESCRIPTION
 
@@ -161,7 +174,6 @@ C<{ object: properties }> expands to C<{ type: "object", properties }>.
     }                                           }
                                             }
 
-
 =head3 C<array> property
 
 C<{ array: items }> expands to C<{ type: "array", items }>.
@@ -174,7 +186,6 @@ C<{ array: items }> expands to C<{ type: "array", items }>.
                                                     type: 'number' 
                                                 }
                                             }
-
 
 =head3 C<required> property
 
@@ -190,9 +201,6 @@ up to the C<required> attribute of its parent object.
           baz: { }                                bar: {},
         }                                         baz: {}
     }                                       }
-                                            
-
-
 
 =head1 SEE ALSO
 
@@ -200,5 +208,15 @@ up to the C<required> attribute of its parent object.
 
 * JavaScript version of this module - L<http://github.com/yanick/json-shema-shorthand>
 
+=head1 AUTHOR
 
+Yanick Champoux <yanick@babyl.dyndns.org>
 
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2016 by Yanick Champoux.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
+=cut
