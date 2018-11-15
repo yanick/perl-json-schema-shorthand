@@ -120,7 +120,7 @@ under a different name in your namespace.
 
     my $schema = expand_json_schema $shorthand;
 
-=head2Shorthands
+=head2 Shorthands
 
 =head3 Types as string
 
